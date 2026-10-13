@@ -1,0 +1,26 @@
+{
+  "name": "jk-cred",
+  "version": "1.0.0",
+  "description": "JK CRED — App de empréstimo com Supabase + Netlify",
+  "private": true,
+  "scripts": {
+    "test:auth": "node public/test-auth.js",
+    "test:loan-rules": "node public/loan-rules.test.js",
+    "supabase:deploy": "supabase functions deploy acesso-cliente --project-ref cluxbeysuboablzeawnm",
+    "supabase:serve": "supabase functions serve acesso-cliente --env-file .env.local",
+    "netlify:dev": "netlify dev",
+    "lint": "echo \"No linter configured yet\""
+  },
+  "keywords": [
+    "supabase",
+    "netlify",
+    "loan",
+    "credit",
+    "edge-functions"
+  ],
+  "author": "JK CRED",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
